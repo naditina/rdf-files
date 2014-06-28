@@ -1,0 +1,8 @@
+@prefix rdf: <http://www.w3.org/1999/02/22−rdf−syntax−ns#>. @prefix s: <http://example.org/students/vocab#>.
+<http://example.org/courses/6.001> s:student _:sch1.
+_:sch1
+rdf:first <http://example.org/students/Amy>; rdf:rest _:sch2 .
+_:sch2
+rdf:first <http://example.org/students/Mohamed>; rdf:rest _:sch3 .
+_:sch3
+rdf:first <http://example.org/students/Johann>; rdf:rest rdf:nil .
